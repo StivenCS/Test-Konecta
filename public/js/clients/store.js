@@ -1,19 +1,18 @@
-$(".addUser").click(function() {
+$(".addClient").click(function() {
     var name = $("#name").val();
-    var type = $("#type").val();
+    var document = $("#document").val();
     var email = $("#email").val();
     var token = $("input[name='_token']").val();
-    var password = $('#password').val();
-    var password
+    var direction = $('#direction').val();
     var data = {
         'name': name,
-        'type': type,
+        'document': document,
         'email': email,
-        'password': password,
+        'direction': direction,
         '_token': token,
     };
 
-    var url = `register`;
+    var url = `clients/create`;
     $.ajax({
         url: url,
         headers: {

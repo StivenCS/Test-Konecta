@@ -168,7 +168,8 @@ return [
 
         // JWT
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-
+        // Spatie
+        Spatie\Permission\PermissionServiceProvider::class,
         /*
          * Application Service Providers...
          */
